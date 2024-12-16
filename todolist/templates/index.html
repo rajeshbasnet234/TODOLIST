@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+</head>
+<body>
+    <h1>My Name: Rajesh</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        {% for person in persons %}
+
+
+        <tbody>
+            <tr>
+                <td>#</td>
+                <td>{{person.name}}</td>
+                <td>{{person.age}}</td>
+                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
